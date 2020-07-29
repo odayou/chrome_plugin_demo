@@ -47,8 +47,8 @@ function showError (message) {
 function showTip (message, title = '通知') {
   tip.style.color = 'green'
   tip.innerHTML = `${title}：${message}`
-  tip.display = 'block'
+  tip.style.display = 'block'
   setTimeout(function () {
-    tip.display = 'none'
+    tip.style.display = 'none'
   }, 3000)
 }
