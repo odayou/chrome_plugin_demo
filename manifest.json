@@ -1,0 +1,19 @@
+{
+	"name": "chrome_plugin_demo",
+	"version": "1.0",
+	"description": "运营小工具",
+	"manifest_version": 2,
+	"background": {
+		"page": "index.html"
+	},
+	"browser_action":
+	{
+		"default_title": "生成通过小程序打开的h5链接",
+		"default_popup": "index.html"
+	},
+	"permissions": [
+		"clipboardWrite",
+		"clipboardRead",
+		"notifications"
+	]
+}

@@ -1,0 +1,59 @@
+<html lang="zh">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+    <div id="tips"></div>
+    <div class="part">
+        <fieldset>
+            <legend>生成通过小程序打开的h5链接</legend>
+            <div class="form-item">
+                要打开的完整链接: <input type="url" id="fullurl">
+            </div>
+            <div class="form-item">
+                生成的链接地址: <textarea id="createUrlText" cols="1"></textarea>
+            </div>
+            <div class="form-item">
+                <button id="createUrl">生成并复制</button>
+                <!--<button id="copyUrl">复制</button>-->
+            </div>
+        </fieldset>
+    </div>
+    <script type="text/javascript" src="./popup.js"></script>
+    <style>
+
+        body {
+            font-family: Microsoft YaHei;
+            font-size: 13px;
+            color: #000000;
+            min-width:200px;
+            overflow-x:hidden;
+            background-image: url(bg.jpg);
+        }
+
+        img {
+            margin:5px;
+            border:0px solid black;
+            vertical-align:middle;
+            width:82px;
+            height:22px;
+        }
+
+        fieldset{
+            border: 1px solid red !important;
+        }
+        input{border:1px solid black;FONT-SIZE: 9pt; FONT-STYLE: normal; FONT-VARIANT: normal; FONT-WEIGHT: normal; HEIGHT: 18px; LINE-HEIGHT: normal}
+
+        .part{
+            width: 500px
+        }
+        .part input, .part textarea{
+            width: 80%
+        }
+        .form-item{
+            margin-top: 5px;
+        }
+    </style>
+    </body>
+</html>
