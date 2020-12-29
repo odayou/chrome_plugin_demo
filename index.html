@@ -9,11 +9,23 @@
         <fieldset>
             <legend>生成通过小程序打开的h5链接</legend>
             <div class="form-item">
+                链接投放渠道:(<span style="color: red;">注意：投放到公众号时，链接投放渠道一定要选‘公众号文章’</span>)
+                <div class="page-types">
+                    <div class="form-item">
+                        普通<input type="radio" checked name="pageType" value="1">
+                    </div>&nbsp;&nbsp;
+                    <div class="form-item">
+                        公众号文章<input type="radio" name="pageType" value="2">
+                    </div>
+                </div>
+            </div>
+            <div class="form-item">
                 要打开的完整链接: <input type="url" id="fullurl">
             </div>
             <div class="form-item">
                 生成的链接地址: <textarea id="createUrlText" cols="1"></textarea>
             </div>
+
             <div class="form-item">
                 <button id="createUrl">生成并复制</button>
                 <!--<button id="copyUrl">复制</button>-->
@@ -53,6 +65,16 @@
         }
         .form-item{
             margin-top: 5px;
+        }
+        .page-types{
+            display: flex;
+        }
+        .page-types .form-item{
+            display: flex;
+            align-items: center;
+        }
+        .page-types input[type=radio]{
+            width: auto;
         }
     </style>
     </body>
