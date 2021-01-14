@@ -5,3 +5,5 @@ chrome插件小样，尝试插件基础功能，比如表单内容获取、dom�
 
 screenshot
 ![](https://github.com/odayou/chrome_plugin_demo/blob/master/screenshot.png)
+
+[参考资料](https://github.com/sxei/chrome-plugin-demo)
